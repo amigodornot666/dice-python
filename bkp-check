@@ -1,13 +1,7 @@
 #!/usr/bin/python
-# a fun game of 10000 using unicode 
-# pics of dice
-
-# heres the imports, needed for randomness
-# as well as the unicode (python dosent like it)
 import commands
 import random
 
-# here we assign the pics to variables
 a1 = commands.getoutput('d1')
 a2 = commands.getoutput('d2')
 a3 = commands.getoutput('d3')
@@ -15,8 +9,6 @@ a4 = commands.getoutput('d4')
 a5 = commands.getoutput('d5')
 a6 = commands.getoutput('d6')
 
-# now we assign list 1-6 all six faces of a die.
-# this effectivly gives us six dice.
 list1 = [a1,a2,a3,a4,a5,a6]
 list2 = [a1,a2,a3,a4,a5,a6]
 list3 = [a1,a2,a3,a4,a5,a6]
@@ -24,10 +16,8 @@ list4 = [a1,a2,a3,a4,a5,a6]
 list5 = [a1,a2,a3,a4,a5,a6]
 list6 = [a1,a2,a3,a4,a5,a6]
 
-# we need to seed so we actually get a random number
 random.seed()
 
-# now we roll the dice
 dce1 = random.choice(list1)
 dce2 = random.choice(list2)
 dce3 = random.choice(list3)
@@ -35,7 +25,8 @@ dce4 = random.choice(list4)
 dce5 = random.choice(list5)
 dce6 = random.choice(list6)
 
-# assign the scores
+print dce1, " ", dce2, " ", dce3, " ", dce4, " ", dce5, " ", dce6
+
 if dce1 == a1: 
   D1 = 100
 elif dce1 == a5:
@@ -78,15 +69,9 @@ elif dce6 == a5:
 else: 
   D6 = 0
 
-
-
-Blank = commands.getoutput("clear")
-
-print Blank
-
-print dce1, " ", dce2, " ", dce3, " ", dce4, " ", dce5, " ", dce6
+if dce1 == dce2 and dce3 or dce2 and dce4 or dce2 and dce5 or dce2 and dce6 or dce3 and dce4 or dce3 and dce5 or dce3 and dce6 or dce4 and dce5 or dce4 and dce6 or dce5 and dce6:
+ 
 
 print D1, " ", D2, " ", D3, " ", D4, " ", D5, " ", D6
 TOTAL = D1 + D2 + D3 + D4 + D5 + D6
-
 print 'your total is', TOTAL
