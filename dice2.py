@@ -27,19 +27,19 @@ list6 = [a1,a2,a3,a4,a5,a6]
 # we need to seed so we actually get a random number
 random.seed()
 
-def roll()
-  # now we roll the dice
-  dce1 = random.choice(list1)
-  dce2 = random.choice(list2)
-  dce3 = random.choice(list3)
-  dce4 = random.choice(list4)
-  dce5 = random.choice(list5)
-  dce6 = random.choice(list6)
+# now we roll the dice
+dce1 = random.choice(list1)
+dce2 = random.choice(list2)
+dce3 = random.choice(list3)
+dce4 = random.choice(list4)
+dce5 = random.choice(list5)
+dce6 = random.choice(list6)
+
+dice_list= [dce1,dce2,dce3,dce4,dce5,dce6]
+
+xtra = len(set(dice_list)) <=2
 
 
-print 'Press enter to roll'
-raw_input()
-roll()
 # assign the scores
 if dce1 == a1: 
   D1 = 100
@@ -89,6 +89,8 @@ Blank = commands.getoutput("clear")
 
 print Blank
 
+
+print xtra
 print dce1, " ", dce2, " ", dce3, " ", dce4, " ", dce5, " ", dce6
 
 print D1, " ", D2, " ", D3, " ", D4, " ", D5, " ", D6
