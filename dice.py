@@ -34,5 +34,39 @@ elif dce1 == a5:
 else: 
   D1 = 0
 
-print D1
-	
+if dce2 == a1: 
+  D2 = 100
+elif dce1 == a5:
+  D2 = 50
+else: 
+  D2 = 0
+
+if dce3 == a1: 
+  D3 = 100
+elif dce1 == a5:
+  D3 = 50
+else: 
+  D3 = 0
+
+if dce4 == a1: 
+  D4 = 100
+elif dce1 == a5:
+  D4 = 50
+else: 
+  D4 = 0
+
+if dce5 == a1: 
+  D5 = 100
+elif dce1 == a5:
+  D5 = 50
+else: 
+  D5 = 0
+
+if dce6 == a1: 
+  D6 = 100
+elif dce1 == a5:
+  D6 = 50
+else: 
+  D6 = 0
+
+print D1, " ", D2, " ", D3, " ", D4, " ", D5, " ", D6
