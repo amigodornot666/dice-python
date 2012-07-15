@@ -26,3 +26,13 @@ dce5 = random.choice(list5)
 dce6 = random.choice(list6)
 
 print dce1, " ", dce2, " ", dce3, " ", dce4, " ", dce5, " ", dce6
+
+if dce1 == a1: 
+  D1 = 100
+elif dce1 == a5:
+  D1 = 50
+else: 
+  D1 = 0
+
+print D1
+	
