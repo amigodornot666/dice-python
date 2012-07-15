@@ -29,6 +29,9 @@ random.seed()
 
 PLAY = 'y'
 
+
+FullTotal = 0
+
 while PLAY == 'y':
   # now we roll the dice
   dce1 = random.choice(list1)
@@ -94,15 +97,14 @@ while PLAY == 'y':
   #print xtra
   print dce1, " ", dce2, " ", dce3, " ", dce4, " ", dce5, " ", dce6
   print D1, " ", D2, " ", D3, " ", D4, " ", D5, " ", D6
+  
   TOTAL = D1 + D2 + D3 + D4 + D5 + D6
-
-  print 'your total is', TOTAL
+  FullTotal = FullTotal + TOTAL
+  print 'this hand you got', TOTAL
+  print 'your total is', FullTotal
   print 'Would you like to play again (y or n)?'
   
   PLAY = raw_input()
 
 
 print 'Thanks for playing, have a great day!!'
-
-
-
