@@ -20,6 +20,7 @@ else:
 # as well as the unicode (python dosent like it)
 import commands
 import random
+import collections 
 
 # here we assign the pics to variables
 a1 = commands.getoutput('d1')
@@ -57,6 +58,22 @@ while PLAY == 'y':
 
   dice_list = [dce1,dce2,dce3,dce4,dce5,dce6]
   
+  xtraPointCount = collections.Counter(dice_list)
+  
+  print xtraPointCount[dce1]
+  print xtraPointCount[dce2]
+  print xtraPointCount[dce3]
+  print xtraPointCount[dce4]
+  print xtraPointCount[dce5]
+  print xtraPointCount[dce6]
+  
+  #occurances = collections.defaultdict(lambda:0)
+
+  #for n in dice_list: 
+	#occurances[n] += 1
+	#if occurances[n] >= 3:
+	  #print occurances[n]
+
 
   # assign the scores
   if dce1 == a1: 
@@ -121,4 +138,4 @@ while PLAY == 'y':
   PLAY = raw_input()
 
 
-print 'Thanks for playing, have a great day!!'
+print 'Thanks for playing', NAME, '. Woah you finished with', FullTotal,'points. Have a great day!!'
