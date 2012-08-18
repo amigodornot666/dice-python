@@ -1,0 +1,27 @@
+Usage: locate [OPTION]... [PATTERN]...
+Search for entries in a mlocate database.
+
+  -b, --basename         match only the base name of path names
+  -c, --count            only print number of found entries
+  -d, --database DBPATH  use DBPATH instead of default database (which is
+                         /var/lib/mlocate/mlocate.db)
+  -e, --existing         only print entries for currently existing files
+  -L, --follow           follow trailing symbolic links when checking file
+                         existence (default)
+  -h, --help             print this help
+  -i, --ignore-case      ignore case distinctions when matching patterns
+  -l, --limit, -n LIMIT  limit output (or counting) to LIMIT entries
+  -m, --mmap             ignored, for backward compatibility
+  -P, --nofollow, -H     don't follow trailing symbolic links when checking file
+                         existence
+  -0, --null             separate entries with NUL on output
+  -S, --statistics       don't search for entries, print statistics about each
+                         used database
+  -q, --quiet            report no error messages about reading databases
+  -r, --regexp REGEXP    search for basic regexp REGEXP instead of patterns
+      --regex            patterns are extended regexps
+  -s, --stdio            ignored, for backward compatibility
+  -V, --version          print version information
+  -w, --wholename        match whole path name (default)
+
+Report bugs to mitr@redhat.com.

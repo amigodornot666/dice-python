@@ -126,8 +126,11 @@ while PLAY == 'y':
   face5 = chk_face(dice_list[4])    
   face6 = chk_face(dice_list[5])    
   
+  # DEBUG face_list
+  face_list = [face1, face2, face3, face4, face5, face6]
+  
   # DEBUG
-  #print 'faces', face_list
+  print 'faces', face_list
 
   def triple_chk(dnum, face):
     score = 0
