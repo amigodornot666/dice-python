@@ -2,8 +2,13 @@ STUFF TO COMPLETE BEFORE RELEASE:
 
 add multiplayer support
 
-give players correct score if rolled 3 or more
+DONE//give players correct score if rolled 3 or more
 
 add exemption handling
+
+add multi roll turns
+
+enter and exit screens. maybe ncurses
+
 
 
